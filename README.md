@@ -37,6 +37,6 @@ https://jornal-if.vercel.app/
 ```
 
 ## Agradecimentos
-* <a href="https://github.com/LuizNuneso6 "><img alt="GitHub" src="https://img.shields.io/badge/adiwajshing/Baileys%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
+* <a href="https://github.com/LuizNuneso6 "><img alt="GitHub" src="https://img.shields.io/badge/LuizNunes06%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
 
 
