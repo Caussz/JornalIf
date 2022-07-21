@@ -13,7 +13,7 @@ https://jornal-if.vercel.app/
 > git clone https://github.com/CausszJornalIf
 ```
 
-## Instale o BOT:
+## Instale as dependencias do site:
 
 ```bash
 > sudo apt install nodejs-lts
