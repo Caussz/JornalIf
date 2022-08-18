@@ -17,7 +17,6 @@ a:hover {
 }
 
 .logo {
-
   font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -41,7 +40,7 @@ nav {
 .textoNav{
   background-color: rgba(64, 61, 61, 1);
   color: rgba(115, 106, 98, 1);
-  margin-right: 0.5%;
+  margin-right: 10px;
   padding: 17px 15px;
   border: #23232e solid 2px;
 }
