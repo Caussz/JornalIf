@@ -17,6 +17,7 @@ a:hover {
 }
 
 .logo {
+
   font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -38,24 +39,32 @@ nav {
   background-color: rgba(115, 106, 98, 1);
 }
 .textoNav{
-
   background-color: rgba(64, 61, 61, 1);
   color: rgba(115, 106, 98, 1);
   margin-right: 0.5%;
   padding: 17px 15px;
   border: #23232e solid 2px;
 }
+.textoNav2{
+  background-color: rgba(64, 61, 61, 1);
+  color: rgba(115, 106, 98, 1);
+  margin-left: 0.5%;
+  padding: 17px 20px;
+  border: #23232e solid 2px;
 
+}
+.textoNav2:hover{
+  border: rgb(104, 99, 74);
+}
 .nav-list {
   list-style: none;
   display: flex;
-  margin-right: 1%;
+  margin: 0 0 0 0;
 }
 
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
-  margin-top: 7%;
 }
 
 .mobile-menu {
@@ -122,15 +131,4 @@ nav {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
-}
-.af {
-justify-content: center 
-}
-textoNav2{
-
-  background-color: rgba(64, 61, 61, 1);
-  color: rgba(115, 106, 98, 1);
-  margin: 4px;
-  padding: 17px 15px;
-  border: #23232e solid 2px;
 }
