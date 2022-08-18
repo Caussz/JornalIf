@@ -1,5 +1,5 @@
 # JornalIf
-https://jornal-if.vercel.app/
+
 <p align="center">
 <a href="#"><img title="Hansei Tech" src="https://img.shields.io/badge/TRabalho trimestral DevWeb-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
