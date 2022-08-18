@@ -1,5 +1,3 @@
-# JornalIf
-
 <p align="center">
 <a href="#"><img title="Hansei Tech" src="https://img.shields.io/badge/TRabalho trimestral DevWeb-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
@@ -35,7 +33,8 @@
 > Para executar = pm2 start node index.js
 > depois = pm2 monit
 ```
-
+<p> Programador: Cauã Vinicius</p>
+<p> Designer: Luiz Felipe </p>
 ## Agradecimentos
 * <a href="https://github.com/LuizNuneso6 "><img alt="GitHub" src="https://img.shields.io/badge/LuizNunes06%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
 
