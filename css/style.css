@@ -1,6 +1,7 @@
+/* importaçoes */
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-
+/* Barra de scroll */
 ::-webkit-scrollbar{
   width: 10px;
 }
@@ -15,6 +16,7 @@
 ::-webkit-scrollbar-track{
   background: #1e252d;
 }
+/* definiçoes gerais*/
 * {
   margin: 0;
   padding: 0;
@@ -23,12 +25,15 @@
   vertical-align: baseline;
   box-sizing: inherit;
 }
-
 body {
   background-color: #1e252d;
   line-height: 1;
   -webkit-text-size-adjust: none;
   overflow-x: hidden;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16pt;
 }
 .ht {
   text-decoration: underline;
@@ -101,13 +106,7 @@ ul {
     font-size: 10pt;
   }
 }
-html {
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 16pt;
-}
 
 a:hover {
   border-bottom-color: transparent;
