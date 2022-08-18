@@ -29,11 +29,9 @@ a:hover {
 }
 nav {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #0000ff;
   height: 8vh;
   background-color: rgba(115, 106, 98, 1);
 }
@@ -47,8 +45,8 @@ nav {
 .textoNav2{
   background-color: rgba(64, 61, 61, 1);
   color: rgba(115, 106, 98, 1);
-  margin-left: 0.5%;
   padding: 17px 20px;
+  margin-left: 10px;
   border: #23232e solid 2px;
 
 }
@@ -82,19 +80,22 @@ nav {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
+
   }
   .nav-list {
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vw;
+    width: 70%;
     height: 92vh;
-    background: #23232e;
+    background-color:rgba(115, 106, 98, 0);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    z-index: 4;
+
   }
   .nav-list li {
     margin-left: 0;
@@ -107,8 +108,11 @@ nav {
 
 .nav-list.active {
   transform: translateX(0);
+  height: 50%;
+  background-color: rgba(115, 106, 98, 0.856);
+  border-bottom: solid 3px #23232e;
+  border-left: solid 3px #23232e;
 }
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
