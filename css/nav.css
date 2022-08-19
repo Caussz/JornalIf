@@ -28,27 +28,30 @@ a:hover {
   margin: 0.5%;
 }
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  height: 8vh;
+  height: 57px;
   background-color: rgba(115, 106, 98, 1);
+  z-index: 4;
 }
 .textoNav{
   background-color: rgba(64, 61, 61, 1);
   color: rgba(115, 106, 98, 1);
   margin-right: 10px;
-  padding: 17px 15px;
+  padding: 14px 15px;
   border: #23232e solid 2px;
 }
 .textoNav2{
   background-color: rgba(64, 61, 61, 1);
   color: rgba(115, 106, 98, 1);
-  padding: 17px 20px;
   margin-left: 10px;
+  padding: 17px 20px;
   border: #23232e solid 2px;
-
 }
 .textoNav2:hover{
   border: rgb(104, 99, 74);
@@ -108,7 +111,10 @@ nav {
 
 .nav-list.active {
   transform: translateX(0);
-  height: 50%;
+  position: fixed;
+  top: 57px;
+  height: 400px;
+  width: 40%;
   background-color: rgba(115, 106, 98, 0.856);
   border-bottom: solid 3px #23232e;
   border-left: solid 3px #23232e;

@@ -283,6 +283,7 @@ ul.actions.special {
   justify-content: center;
   width: 100%;
   margin-left: 0;
+
 }
 
 ul.actions.special li:first-child {
@@ -790,6 +791,7 @@ main > .posts > article:nth-child(-n + 2) {
     margin-left: auto;
     margin-right: auto;
   }
+  
 }
 
 @media screen and (max-width: 736px) {
@@ -997,43 +999,94 @@ a.image:hover img {
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-.colunas{
-  display: grid;
-  grid-template-columns: 50% 50%;
+.fundo {
+  width: 60%;
+  height: 600px;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  box-shadow: rgba(115, 106, 98, 1) 5px 5px 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.fotoEquipe {
+  margin-top: 5%;
+  margin-left: 15%;
 
 }
-.fundoLuiz{
-  width: 60%;
-  height: 800px;
-  background-color: #f8f8f8;
-  margin: 0 auto;
+
+.pd {
+  margin: 4% 0 4% 4%;
 }
-.fundoCaua{
-  width: 60%;
-  height: 800px;
-  background-color: #f8f8f8;
-  margin: 0 auto;
+
+.nome {
+  text-align: center;
 }
-.colunas{
-  display: grid;
-  grid-template-columns: 50% 50%;
+
+.image {
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.image.fit {
+  display: block;
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.image.fit img {
+  width: 100%;
+}
+
+.image.main {
+  display: block;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 736px) {
+
+  .image.fit {
+    margin: 2rem 0;
+  }
+
+  .image.main {
+    margin: 2rem 0;
+  }
 
 }
-.fundoLuiz{
-  width: 60%;
-  height: 800px;
-  background-color: #f8f8f8;
-  margin: 0 auto;
+
+a.image {
+  overflow: hidden;
 }
-.fundoCaua{
-  width: 60%;
-  height: 800px;
-  background-color: #f8f8f8;
-  margin: 0 auto;
+
+a.image img {
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
-.hanseiGiga{
-  font-size: 250px;
-  position: fixed;
-  margin-left: 41%;
-  margin-top: 1%;
+
+a.image:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 901px) {
+  .colunas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+}
+@media screen and (max-width: 900px) {
+  .colunas {
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
 }
