@@ -9,10 +9,12 @@ router.get('/', (req, res) => {
 router.get('/cotacao', (req, res) => {
     res.sendFile(__path + '/view/cotacao.html')
 })
-router.get('/info', (req, res) => {
+router.get('/equipe', (req, res) => {
     res.sendFile(__path + '/view/equipe.html')
 })
-
+router.get('/planeta', (req, res) => {
+    res.sendFile(__path + '/view/planeta.html')
+})
 
 router.get('/css/style.css', (req, res) => {
     res.sendFile(__path + '/css/style.css')
@@ -23,8 +25,13 @@ router.get('/css/nav.css', (req, res) => {
 router.get('/js/index.js', (req, res) => {
     res.sendFile(__path + '/js/index.js')
 })
-router.get('/image/stevejobsiphone2g.jpg', (req, res) => {
+router.get('/images/stevejobsiphone2g.jpg', (req, res) => {
     res.sendFile(__path + '/image/stevejobsiphone2g.jpg')
 })
-
+router.get('../images/caua-juliette.jpg', (req, res) => {
+    res.sendFile(__path + '/image/caua-juliette.jpg')
+})
+router.get('../images/luiz-juliette.jpg', (req, res) => {
+    res.sendFile(__path + '/image/luiz-juliette.jpg')
+})
 module.exports = router
