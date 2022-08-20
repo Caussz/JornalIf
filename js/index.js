@@ -69,13 +69,7 @@ date = new Date();
             Highcharts.chart('container', {
               chart: {
                   type: 'spline'
-              },
-              title: {
-                  text: 'Snow depth at Vikjafjellet, Norway'
-              },
-              subtitle: {
-                  text: 'Irregular time data in Highcharts JS'
-              },
+              },     
               xAxis: {
                   type: 'datetime',
                   dateTimeLabelFormats: { // don't display the dummy year
@@ -106,12 +100,8 @@ date = new Date();
               },
           
               colors: ['#6CF', '#39F', '#06C', '#036', '#000'],
-          
-              // Define the data points. All series have a dummy year
-              // of 1970/71 in order to be compared on the same x axis. Note
-              // that in JavaScript, months start at 0 for January, 1 for February etc.
-              series: [{
-                  name: "Winter 2014-2015",
+            series: [{
+                  name: "dólar 2019-2020",
                   data: [
                       [Date.UTC(1970, 10, 25), 0],
                       [Date.UTC(1970, 11,  6), 0.25],
@@ -142,7 +132,7 @@ date = new Date();
                       [Date.UTC(1971, 6,  4), 0]
                   ]
               }, {
-                  name: "Winter 2015-2016",
+                  name: "dólar 2020-2022",
                   data: [
                       [Date.UTC(1970, 10,  9), 0],
                       [Date.UTC(1970, 10, 15), 0.23],
@@ -169,7 +159,7 @@ date = new Date();
                       [Date.UTC(1971, 5,  7), 0]
                   ]
               }, {
-                  name: "Winter 2016-2017",
+                  name: "dólar 2022-2024",
                   data: [
                       [Date.UTC(1970, 9, 15), 0],
                       [Date.UTC(1970, 9, 31), 0.09],
@@ -246,7 +236,7 @@ date = new Date();
               }
           });
 
-          // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
+          
 var elevationData = [
     [0.0, 225],
     [0.1, 226],
