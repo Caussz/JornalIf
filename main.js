@@ -28,10 +28,10 @@ router.get('/js/index.js', (req, res) => {
 router.get('/images/stevejobsiphone2g.jpg', (req, res) => {
     res.sendFile(__path + '/image/stevejobsiphone2g.jpg')
 })
-router.get('/images/caua-juliette.jpg', (req, res) => {
+router.get('../images/caua-juliette.jpg', (req, res) => {
     res.sendFile(__path + '/image/caua-juliette.jpg')
 })
-router.get('/images/luiz-juliette.jpg', (req, res) => {
+router.get('../images/luiz-juliette.jpg', (req, res) => {
     res.sendFile(__path + '/image/luiz-juliette.jpg')
 })
 module.exports = router
