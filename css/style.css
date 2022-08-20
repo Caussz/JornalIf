@@ -356,7 +356,47 @@ header.major .date:before,
 header.major .date:after {
   border-top-color: #eeeeee;
 }
+main {
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  z-index: 2;
+}
 
+main > * {
+  padding: 4rem 4rem 2rem 4rem;
+  border-top: solid 2px #eeeeee;
+  margin: 0;
+}
+
+main > *:first-child {
+  border-top: 0;
+}
+
+main > footer {
+  text-align: center;
+}
+
+main > .post {
+  padding: 8rem 8rem 6rem 8rem;
+}
+
+main > .post header.major > .date {
+  margin-top: -2rem;
+}
+
+main > .post header.major > h1,
+main > .post header.major h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+}
+
+main > .post.featured {
+  text-align: center;
+}
 /*barra de navegação*/
 .nav {
   color: #ffffff;  
