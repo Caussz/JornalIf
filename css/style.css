@@ -156,8 +156,6 @@ ul li {
   padding-left: 0.5rem;
 }
 
-/* Section/Article */
-
 section.special,
 article.special {
   text-align: center;
@@ -189,17 +187,6 @@ header > h2 + p {
   font-size: 1rem;
   margin-top: -0.75rem;
 }
-
-header > h3 + p {
-  font-size: 0.9rem;
-  margin-top: -0.75rem;
-}
-
-header > h4 + p {
-  font-size: 0.8rem;
-  margin-top: -0.75rem;
-}
-
 header.major {
   margin: 0 0 4rem 0;
   text-align: center;
@@ -235,14 +222,6 @@ header.major > .date:before {
 
 header.major > .date:after {
   right: 0;
-}
-
-
-
-@media screen and (max-width: 736px) {
-  header.major {
-    margin: 0 0 2rem 0;
-  }
 }
 
 header.major .date:before,
