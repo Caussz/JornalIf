@@ -168,7 +168,6 @@ header {
 header > .date {
   display: block;
   font-size: 0.8rem;
-  height: 1;
   margin: 0 0 1rem 0;
   position: relative;
 }
@@ -637,4 +636,9 @@ main > .post.featured {
   html {
     font-size: 10pt;
   }
+}
+
+.tamanho{
+  height: 400px;
+  width: 400px;
 }
