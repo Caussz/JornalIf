@@ -112,11 +112,10 @@ a.image:hover img {
 hr.major {
   margin: 5rem 0;
 }
-/*Listas e itens da lista*/
-ol, ul {
-  list-style: none;
-}
 ul.actions {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
   cursor: default;
   list-style: none;
@@ -130,6 +129,9 @@ ul.actions li {
 }
 
 ul.actions.special {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   width: 100%;
   margin-left: 0;
@@ -139,17 +141,88 @@ ul.actions.special li:first-child {
   padding-left: 0;
 }
 
+ul.actions.stacked {
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+ul.actions.stacked li {
+  padding: 1.3rem 0 0 0;
+}
+
+ul.actions.stacked li:first-child {
+  padding-top: 0;
+}
+
 ul.actions.fit {
   width: calc(100% + 1rem);
+}
+
+ul.actions.fit li {
+  -moz-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  width: 100%;
 }
 
 ul.actions.fit li > * {
   width: 100%;
 }
 
+ul.actions.fit.stacked {
+  width: 100%;
+}
+
+
+
+  ul.actions:not(.fixed) li {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  ul.actions:not(.fixed) li > * {
+    width: 100%;
+  }
+
+  ul.actions:not(.fixed) li:first-child {
+    padding-top: 0;
+  }
+
+  ul.actions:not(.fixed) li input[type="submit"],
+  ul.actions:not(.fixed) li input[type="reset"],
+  ul.actions:not(.fixed) li input[type="button"],
+  ul.actions:not(.fixed) li button,
   ul.actions:not(.fixed) li .button {
     width: 100%;
   }
+
+  ul.actions:not(.fixed) li input[type="submit"].icon:before,
+  ul.actions:not(.fixed) li input[type="reset"].icon:before,
+  ul.actions:not(.fixed) li input[type="button"].icon:before,
+  ul.actions:not(.fixed) li button.icon:before,
+  ul.actions:not(.fixed) li .button.icon:before {
+    margin-left: -0.5rem;
+  }
+}
+
+/* List */
 
 ol {
   list-style: decimal;
@@ -170,14 +243,37 @@ ul {
 ul li {
   padding-left: 0.5rem;
 }
-/*sessões e artigos*/
-section.special, article.special {
+
+ul.divided {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.divided li {
+  border-top: solid 1px;
+  padding: 0.5rem 0;
+}
+
+ul.divided li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+ul.divided li {
+  border-top-color: #eeeeee;
+}
+
+/* Section/Article */
+
+section.special,
+article.special {
   text-align: center;
-} 
-/*Cabeçalho e main*/
+}
+
 header {
   cursor: default;
 }
+
 header > .date {
   display: block;
   font-size: 0.8rem;
@@ -185,15 +281,32 @@ header > .date {
   margin: 0 0 1rem 0;
   position: relative;
 }
+
+header > p {
+  font-style: italic;
+}
+
 header > h1 + p {
   font-size: 1.1rem;
   margin-top: -0.5rem;
   line-height: 2;
 }
+
 header > h2 + p {
   font-size: 1rem;
   margin-top: -0.75rem;
 }
+
+header > h3 + p {
+  font-size: 0.9rem;
+  margin-top: -0.75rem;
+}
+
+header > h4 + p {
+  font-size: 0.8rem;
+  margin-top: -0.75rem;
+}
+
 header.major {
   margin: 0 0 4rem 0;
   text-align: center;
@@ -202,70 +315,48 @@ header.major {
 header.major > :last-child {
   margin-bottom: 0;
 }
+
 header.major > p {
   margin-top: 0;
   text-align: center;
 }
+
 header.major > .date {
   font-size: 1rem;
   margin: 0 0 4rem 0;
 }
-main {
-  background-color: #ffffff;
-  position: relative;
-  margin: 0 auto;
-  width: calc(100% - 4rem);
-  max-width: 72rem;
-  z-index: 2;
-}
-main > * {
-  padding: 4rem 4rem 2rem 4rem;
-  border-top: solid 2px #eeeeee;
-  margin: 0;
-}
-main > *:first-child {
-  border-top: 0;
-}
-main > footer {
-  text-align: center;
-}
-main > .post {
-  padding: 8rem 8rem 6rem 8rem;
-}
-main > .post header.major > .date {
-  margin-top: -2rem;
-}
-main > .post header.major > h1,
-main > .post header.major h2 {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin: 0 0 2rem 0;
+
+header.major > .date:before,
+header.major > .date:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 6rem);
+  border-top: solid 2px;
 }
 
-main > .post.featured {
-  text-align: center;
+header.major > .date:before {
+  left: 0;
 }
-main > .posts {
-  display: flex;
-  align-items: stretch;
-  text-align: center;
-  width: 100%;
-  padding: 0;
+
+header.major > .date:after {
+  right: 0;
 }
-main > .posts > * {
-  padding: 4rem;
-  width: 50%;
+
+
+
+@media screen and (max-width: 736px) {
+  header.major {
+    margin: 0 0 2rem 0;
+  }
 }
-main > .posts > article {
-  border-color: #eeeeee;
-  border-left-width: 2px;
-  border-style: solid;
-  border-top-width: 2px;
-  text-align: center;
+
+header.major .date:before,
+header.major .date:after {
+  border-top-color: #eeeeee;
 }
-main > .posts > article > :last-child {
-  margin-bottom: 0;
-}
+
 /*barra de navegação*/
 .nav {
   color: #ffffff;  
